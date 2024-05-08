@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     public double ps3 = 5000;
     public double psvr = 20000;
     public double total = 0;
+
     public double htambahan = 0;
     String tambahan;
     String type;
@@ -76,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("waktu", jam);
             intent.putExtra("Total", total);
             startActivity(intent);
-
+            finish();
         });
     }
 }
